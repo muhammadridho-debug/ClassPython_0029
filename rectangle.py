@@ -40,5 +40,9 @@ if __name__ == "__main__":
         print(f"Keliling: {circumference} cm")
         print(f"Luas: {area} cm²")
 
+        # Pengujian validasi input bernilai 0
+        print("\n--- Pengujian Validasi Input ---")
+        invalid_rect = Rectangle(0, 5)
+
     except ValueError as error:
         print(f"Error caught: {error}")
