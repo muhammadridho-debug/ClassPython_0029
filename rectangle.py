@@ -32,5 +32,13 @@ if __name__ == "__main__":
         print("--- Tampilan String ---")
         print(str(rect))
 
+        # Panggil fungsi perhitungan
+        circumference = rect.calculate_circumference()
+        area = rect.calculate_area()
+
+        print("\n--- Perhitungan ---")
+        print(f"Keliling: {circumference} cm")
+        print(f"Luas: {area} cm²")
+
     except ValueError as error:
         print(f"Error caught: {error}")
