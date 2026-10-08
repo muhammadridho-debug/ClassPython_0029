@@ -7,3 +7,7 @@ class Rectangle:
         
         self.length = length
         self.width = width
+
+    def calculate_circumference(self) -> float:
+        """Menghitung keliling persegi panjang."""
+        return 2 * (self.length + self.width)
