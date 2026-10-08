@@ -21,3 +21,16 @@ class Rectangle:
         len_val = int(self.length) if isinstance(self.length, float) and self.length.is_integer() else self.length
         wid_val = int(self.width) if isinstance(self.width, float) and self.width.is_integer() else self.width
         return f"rectangle, {len_val} cm long, and {wid_val} cm wide"
+
+
+if __name__ == "__main__":
+    try:
+        # Inisialisasi objek Rectangle
+        rect = Rectangle(3, 2)
+
+        # Cetak representasi string
+        print("--- Tampilan String ---")
+        print(str(rect))
+
+    except ValueError as error:
+        print(f"Error caught: {error}")
